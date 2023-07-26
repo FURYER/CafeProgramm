@@ -1,0 +1,72 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <Platforms>AnyCPU;x64;x86</Platforms>
+    <ImplicitUsings>disable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Add.png" />
+    <None Remove="default_user_icon.jpg" />
+    <None Remove="Like.png" />
+    <None Remove="Like2.png" />
+    <None Remove="Resources\Images\ChatBackground.jpg" />
+    <None Remove="Resources\Images\Comment.png" />
+    <None Remove="Resources\Images\default_user_icon.jpg" />
+    <None Remove="Resources\Images\find_icon.png" />
+    <None Remove="Resources\Images\GoogleMap.jpg" />
+    <None Remove="Resources\Images\Header.png" />
+    <None Remove="Resources\Images\Logo.png" />
+    <None Remove="Resources\Images\message_icon.png" />
+    <None Remove="Resources\Images\Options.png" />
+    <None Remove="Resources\Images\Update.png" />
+    <None Remove="Resources\logo.ico" />
+    <None Remove="Resources\ServerAddress.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Images\ChatBackground.jpg" />
+    <Resource Include="Resources\Images\Comment.png" />
+    <Resource Include="Resources\Images\GoogleMap.jpg" />
+    <Resource Include="Resources\Images\Header.png" />
+    <Resource Include="Resources\Images\Logo.png" />
+    <Resource Include="Resources\Images\message_icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="protobuf-net" Version="3.2.26" />
+    <PackageReference Include="protobuf-net.Core" Version="3.2.26" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Images\Add.png" />
+    <Resource Include="Resources\Images\default_user_icon.jpg" />
+    <Resource Include="Resources\Images\find_icon.png" />
+    <Resource Include="Resources\Images\Like.png" />
+    <Resource Include="Resources\Images\Like2.png" />
+    <Resource Include="Resources\Images\Options.png" />
+    <Resource Include="Resources\Images\Update.png" />
+    <Resource Include="Resources\Logo.ico" />
+    <Resource Include="Resources\ServerAddress.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

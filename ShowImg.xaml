@@ -1,0 +1,10 @@
+﻿<Window x:Class="BusinessByJob.ShowImg"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BusinessByJob"
+        mc:Ignorable="d"
+        Title="Изображение" ResizeMode="NoResize" WindowStyle="None" WindowStartupLocation="Manual" SizeToContent="WidthAndHeight">
+    <Image x:Name="ShowingImg" Stretch="Uniform" MaxWidth="500" MaxHeight="500" MouseLeave="Window_MouseLeave"/>
+</Window>
